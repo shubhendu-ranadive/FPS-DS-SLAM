@@ -1,4 +1,4 @@
-# FPS-DS-SLAM
+# FPS-DS-SLAM (Work under Progress)
 **Author:** [Shubhendu Ranadive](https://github.com/shubhendu-ranadive)
 
 FPS-DS-SLAM is a robust visual SLAM library that can **identify and remove dynamic feature points** for stereo camera configurations. More specificly, the Mask R-CNN is applied to extract dynamic objects from input frame. Then a mask is applied to feature extractor to remove dynamic keypoints in each level of image pyramid.
