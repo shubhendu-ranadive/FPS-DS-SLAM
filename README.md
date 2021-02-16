@@ -1,7 +1,7 @@
 # FPS-DS-SLAM (Work under Progress)
 **Author:** [Shubhendu Ranadive](https://github.com/shubhendu-ranadive)
 
-FPS-DS-SLAM is a robust visual SLAM library that can **identify and remove dynamic feature points** for stereo camera configurations. More specificly, the Mask R-CNN is applied to extract dynamic objects from input frame. Then a mask is applied to feature extractor to remove dynamic keypoints in each level of image pyramid.
+FPS-DS-SLAM is a robust visual SLAM library that can **identify and remove dynamic feature points** for stereo camera configurations.
 
 The system shows superior result in camera trajectory estimation of KITTI dataset compared to origin ORB-SLAM2.
 
@@ -13,7 +13,7 @@ ORB-SLAM2 is released under a [GPLv3 license](https://github.com/raulmur/ORB_SLA
 
 
 # 2. Prerequisites
-The library is tested only in Ubuntu 18.04 and OpenCV 3.4.9. OpenCV dnn module is required for dnn inference.
+The library is tested only in Ubuntu 18.04 and OpenCV 3.4.9.
 
 ## C++11 or C++0x Compiler
 We use the new thread and chrono functionalities of C++11.
@@ -59,7 +59,7 @@ This will create executables **test**, **mask_rcnn**, **stereo_kitti** and **ste
 
 2. Execute the following command. Change `KITTIX.yaml`to KITTI00-02.yaml, KITTI03.yaml or KITTI04-12.yaml for sequence 0 to 2, 3, and 4 to 12 respectively. Change `PATH_TO_DATASET_FOLDER` to the uncompressed dataset folder. Change `SEQUENCE_NUMBER` to 00, 01, 02,.., 11. 
 ```
-./Examples/Stereo/stereo_kitti Vocabulary/ORBvoc.txt Examples/Stereo/KITTIX.yaml PATH_TO_DATASET_FOLDER/dataset/sequences/SEQUENCE_NUMBER results/CamPoses.txt ModelsCNN/
+./Examples/Stereo/stereo_kitti Vocabulary/ORBvoc.txt Examples/Stereo/KITTIX.yaml PATH_TO_DATASET_FOLDER/dataset/sequences/SEQUENCE_NUMBER results/CamPoses.txt
 ```
 
 ## EuRoC Dataset
