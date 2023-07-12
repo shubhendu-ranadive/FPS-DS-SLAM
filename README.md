@@ -1,4 +1,4 @@
-# FPS-DS-SLAM (Work under Progress)
+# FPS-DS-SLAM
 **Author:** [Shubhendu Ranadive](https://github.com/shubhendu-ranadive)
 
 FPS-DS-SLAM is a robust visual SLAM library that can **identify and remove dynamic feature points** for stereo camera configurations.
@@ -35,7 +35,7 @@ We use modified versions of the [DBoW2](https://github.com/dorian3d/DBoW2) libra
 ## git-lfs 
 We use [git-lfs](https://git-lfs.github.com/) to track big fils in ModelsCNN/ directory.
 
-# 3. Building Dynamic-ORB-SLAM2 library and examples
+# 3. Building FPS-DS-SLAM library and examples
 
 Clone the repository:
 ```
@@ -86,7 +86,7 @@ This is the default mode. The system runs in parallal three threads: Tracking, L
 This mode can be used when you have a good map of your working area. In this mode the Local Mapping and Loop Closing are deactivated. The system localizes the camera in the map (which is no longer updated), using relocalization if needed. 
 
 # 9. Saving Map Points
-The map points are saved automatically to *MapPointsSave.xyz* file. This xan be converted to pcd or ply using *Point Cloud Library* [PCL](https://pointclouds.org/downloads/)
+The map points are saved automatically to *MapPointsSave.xyz* file. This can be converted to pcd or ply using *Point Cloud Library* [PCL](https://pointclouds.org/downloads/)
 
 # Acknowledgement
 
